@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "iReady Study Companion",
+  "version": "1.0.0",
+  "description": "Track iReady work, deadlines, notes, and study sessions.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "iReady Study Companion",
+    "default_popup": "popup.html"
+  }
+}

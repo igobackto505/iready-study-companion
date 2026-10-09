@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iReady Study Companion</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>iReady Study Companion</h1>
+
+      <div class="stats">
+        <div class="stat">
+          <span id="doneCount">0</span>
+          <small>Done</small>
+        </div>
+        <div class="stat">
+          <span id="todoCount">0</span>
+          <small>To do</small>
+        </div>
+      </div>
+
+      <form id="taskForm">
+        <input id="taskName" type="text" placeholder="Assignment name" required />
+        <input id="taskDate" type="date" />
+        <select id="taskPriority">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button type="submit">Add task</button>
+      </form>
+
+      <div class="timer-box">
+        <div id="timeDisplay">25:00</div>
+        <div class="timer-buttons">
+          <button id="startPauseBtn">Start</button>
+          <button id="resetBtn" class="secondary">Reset</button>
+        </div>
+      </div>
+
+      <label class="notes-label" for="notes">Notes</label>
+      <textarea id="notes" rows="4" placeholder="Write study notes or reminders..."></textarea>
+
+      <h2>Tasks</h2>
+      <ul id="taskList"></ul>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
